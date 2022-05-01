@@ -159,7 +159,7 @@ p {
 //page2-------------------------page2--------------------page2
 .page2 {
 	position: relative;
-	z-index: 2;
+	z-index: 5;
 	opacity: 0;
 	&__image {
 	}
@@ -245,7 +245,7 @@ p {
 	opacity: 0;
 	margin-top: -95vh;
 	position: relative;
-	z-index: 3;
+	z-index: 5;
 	&__image {}
 	
 	&__container {
