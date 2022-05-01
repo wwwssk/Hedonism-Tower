@@ -100,14 +100,15 @@ textPage2Text.fromTo('.page2__right--second', 1, {y: '0px', opacity: 1}, {y: '-1
 
 
 textPage2Text.fromTo('.page2__right--first-mobile', 1, {y: '10vh', opacity: 0}, {y: '0px', opacity: 1}, 1.5)
-textPage2Text.fromTo('.page2__right--second-mobile', 1, {y: '10vh', opacity: 0}, {y: '0px', opacity: 1}, 2.3)
-textPage2Text.fromTo('.page2__left--first-mobile', 1, {y: '10vh', opacity: 0}, {y: '0px', opacity: 1}, 3.1)
+textPage2Text.fromTo('.page2__right--second-mobile', 1, {y: '10vh', opacity: 0}, {y: '0px', opacity: 1}, 2)
+textPage2Text.fromTo('.page2__left--first-mobile', 1, {y: '10vh', opacity: 0}, {y: '0px', opacity: 1}, 2.5)
+textPage2Text.fromTo('.page2__step-back', 1, {y: '10vh', opacity: 0,}, {y: '0px', opacity: 1}, 3)
 
-textPage2Text.fromTo('.page2__right--first-mobile', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 4.1)
-textPage2Text.fromTo('.page2__right--second-mobile', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 4.7)
-textPage2Text.fromTo('.page2__left--first-mobile', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 5.5)
+textPage2Text.fromTo('.page2__right--first-mobile', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 4)
+textPage2Text.fromTo('.page2__right--second-mobile', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 4.5)
+textPage2Text.fromTo('.page2__left--first-mobile', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 5)
+textPage2Text.fromTo('.page2__step-back', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 5.5)
 
-textPage2Text.fromTo('.page2__step-back', 1, {opacity: 1}, {opacity: 0}, 6)
 
 
 ScrollTrigger.create({
@@ -125,7 +126,7 @@ ScrollTrigger.create({
 
 const page2Hidden = gsap.timeline();
 
-page2Hidden.fromTo('.hidden-page2', 1, {opacity: '0',}, {opacity: '1'}, 0)
+page2Hidden.fromTo('.hidden-page2', 1, {opacity: '0', }, {opacity: '1',}, 0)
 
 ScrollTrigger.create({
 	animation: page2Hidden,
@@ -179,15 +180,17 @@ textPage2Text.fromTo('.page3__right--first', 1, {y: '0px', opacity: 1}, {y: '-10
 textPage2Text.fromTo('.page3__left--first', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 4.5)
 textPage2Text.fromTo('.page3__left--second', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 5.2)
 
-textPage2Text.fromTo('.page3__left--first-mobile', 1, {y: '10vh', opacity: 0}, {y: '0px', opacity: 1}, 1.5)
-textPage2Text.fromTo('.page3__left--second-mobile', 1, {y: '10vh', opacity: 0}, {y: '0px', opacity: 1}, 2.1)
-textPage2Text.fromTo('.page3__right--first-mobile', 1, {y: '10vh', opacity: 0}, {y: '0px', opacity: 1}, 2.8)
+textPage2Text.fromTo('.page3__left--first-mobile', 1, {y: '10vh', opacity: 0}, {y: '0px', opacity: 1}, 1)
+textPage2Text.fromTo('.page3__left--second-mobile', 1, {y: '10vh', opacity: 0}, {y: '0px', opacity: 1}, 1.5)
+textPage2Text.fromTo('.page3__right--first-mobile', 1, {y: '10vh', opacity: 0}, {y: '0px', opacity: 1}, 2)
+textPage2Text.fromTo('.page3__step-back', 1, {y: '10vh', opacity: 0,}, {y: '0px', opacity: 1}, 2.5)
 
-textPage2Text.fromTo('.page3__left--first-mobile', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 3.8)
-textPage2Text.fromTo('.page3__left--second-mobile', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 4.5)
-textPage2Text.fromTo('.page3__right--first-mobile', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 5.2)
+textPage2Text.fromTo('.page3__left--first-mobile', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 3.5)
+textPage2Text.fromTo('.page3__left--second-mobile', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 4)
+textPage2Text.fromTo('.page3__right--first-mobile', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 4.5)
+textPage2Text.fromTo('.page3__step-back', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 5)
 
-textPage2Text.fromTo('.page3__step-back', 1, {opacity: 1}, {opacity: 0}, 5.5)
+
 
 
 ScrollTrigger.create({
