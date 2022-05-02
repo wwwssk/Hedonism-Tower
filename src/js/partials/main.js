@@ -164,7 +164,7 @@ ScrollTrigger.create({
 	trigger: '.page3__image',
 	start: 'top',
 	endTrigger: '.page3',
-	end: 'bottom+=400',
+	end: 'bottom+=500',
 	scrub: true,
 	pin: true,
 })
@@ -231,7 +231,7 @@ ScrollTrigger.create({
 	trigger: '.page4',
 	start: 'top',
 	endTrigger: '.page4',
-	end: 'bottom',
+	end: 'bottom+=100',
 	scrub: true,
 	pin: true,
 })

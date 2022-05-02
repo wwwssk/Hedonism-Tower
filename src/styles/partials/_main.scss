@@ -233,6 +233,9 @@ p {
 	margin-top: -140vh;
 	opacity: 0;
 	position: relative;
+	@media (min-height: 1100px){
+		margin-top: -170vh;
+	}
 	&__image {}
 	
 	&__container {
