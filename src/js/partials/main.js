@@ -35,14 +35,14 @@ ScrollTrigger.create({
 
 
 const page1Image = gsap.timeline();
-
+/* 
 page1Image.fromTo('.page1__image', 1, {opacity: '1',}, {opacity: '0'}, 0.2)
-
+*/
 ScrollTrigger.create({
 	animation: page1Image,
 	trigger: '.page1__image',
 	start: 'top',
-	end: 'bottom',
+	end: 'bottom+=500',
 	scrub: true,
 	pin: true,
 })
@@ -81,7 +81,7 @@ ScrollTrigger.create({
 	trigger: '.page2__image',
 	start: 'top',
 	endTrigger: '.page2',
-	end: 'bottom',
+	end: 'bottom+=1500',
 	scrub: true,
 	pin: true,
 })
@@ -90,24 +90,24 @@ ScrollTrigger.create({
 
 const textPage2Text = gsap.timeline();
 
-textPage2Text.fromTo('.page2__left--first', 1, {y: '10vh', opacity: 0}, {y: '0px', opacity: 1}, 1.5)
-textPage2Text.fromTo('.page2__right--first', 1, {y: '10vh', opacity: 0}, {y: '0px', opacity: 1}, 2.3)
-textPage2Text.fromTo('.page2__right--second', 1, {y: '10vh', opacity: 0}, {y: '0px', opacity: 1}, 3.1)
+textPage2Text.fromTo('.page2__left--first', 1, {y: '10vh', opacity: 0}, {y: '0px', opacity: 1}, 5)
+textPage2Text.fromTo('.page2__right--first', 1, {y: '10vh', opacity: 0}, {y: '0px', opacity: 1}, 7)
+textPage2Text.fromTo('.page2__right--second', 1, {y: '10vh', opacity: 0}, {y: '0px', opacity: 1}, 9)
 
-textPage2Text.fromTo('.page2__left--first', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 4.1)
-textPage2Text.fromTo('.page2__right--first', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 4.7)
-textPage2Text.fromTo('.page2__right--second', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 5.5)
+textPage2Text.fromTo('.page2__left--first', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 12)
+textPage2Text.fromTo('.page2__right--first', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 14)
+textPage2Text.fromTo('.page2__right--second', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 16)
 
 
-textPage2Text.fromTo('.page2__right--first-mobile', 1, {y: '10vh', opacity: 0}, {y: '0px', opacity: 1}, 1.5)
-textPage2Text.fromTo('.page2__right--second-mobile', 1, {y: '10vh', opacity: 0}, {y: '0px', opacity: 1}, 2)
-textPage2Text.fromTo('.page2__left--first-mobile', 1, {y: '10vh', opacity: 0}, {y: '0px', opacity: 1}, 2.5)
-textPage2Text.fromTo('.page2__step-back', 1, {y: '10vh', opacity: 0,}, {y: '0px', opacity: 1}, 3)
+textPage2Text.fromTo('.page2__right--first-mobile', 1, {y: '10vh', opacity: 0}, {y: '0px', opacity: 1}, 5)
+textPage2Text.fromTo('.page2__right--second-mobile', 1, {y: '10vh', opacity: 0}, {y: '0px', opacity: 1}, 6.5)
+textPage2Text.fromTo('.page2__left--first-mobile', 1, {y: '10vh', opacity: 0}, {y: '0px', opacity: 1}, 8)
+textPage2Text.fromTo('.page2__step-back', 1, {y: '10vh', opacity: 0,}, {y: '0px', opacity: 1}, 9.5)
 
-textPage2Text.fromTo('.page2__right--first-mobile', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 4)
-textPage2Text.fromTo('.page2__right--second-mobile', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 4.5)
-textPage2Text.fromTo('.page2__left--first-mobile', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 5)
-textPage2Text.fromTo('.page2__step-back', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 5.5)
+textPage2Text.fromTo('.page2__right--first-mobile', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 12.8)
+textPage2Text.fromTo('.page2__right--second-mobile', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 13.5)
+textPage2Text.fromTo('.page2__left--first-mobile', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 14.5)
+textPage2Text.fromTo('.page2__step-back', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 16)
 
 
 
@@ -164,7 +164,7 @@ ScrollTrigger.create({
 	trigger: '.page3__image',
 	start: 'top',
 	endTrigger: '.page3',
-	end: 'bottom',
+	end: 'bottom+=400',
 	scrub: true,
 	pin: true,
 })
@@ -172,23 +172,23 @@ ScrollTrigger.create({
 
 const textPage3Text = gsap.timeline();
 
-textPage2Text.fromTo('.page3__right--first', 1, {y: '10vh', opacity: 0}, {y: '0px', opacity: 1}, 1.5)
-textPage2Text.fromTo('.page3__left--first', 1, {y: '10vh', opacity: 0}, {y: '0px', opacity: 1}, 2.1)
-textPage2Text.fromTo('.page3__left--second', 1, {y: '10vh', opacity: 0}, {y: '0px', opacity: 1}, 2.8)
+textPage2Text.fromTo('.page3__right--first', 1, {y: '10vh', opacity: 0}, {y: '0px', opacity: 1}, 5)
+textPage2Text.fromTo('.page3__left--first', 1, {y: '10vh', opacity: 0}, {y: '0px', opacity: 1}, 7)
+textPage2Text.fromTo('.page3__left--second', 1, {y: '10vh', opacity: 0}, {y: '0px', opacity: 1}, 9)
 
-textPage2Text.fromTo('.page3__right--first', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 3.8)
-textPage2Text.fromTo('.page3__left--first', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 4.5)
-textPage2Text.fromTo('.page3__left--second', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 5.2)
+textPage2Text.fromTo('.page3__right--first', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 12)
+textPage2Text.fromTo('.page3__left--first', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 14)
+textPage2Text.fromTo('.page3__left--second', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 16)
 
-textPage2Text.fromTo('.page3__left--first-mobile', 1, {y: '10vh', opacity: 0}, {y: '0px', opacity: 1}, 1)
-textPage2Text.fromTo('.page3__left--second-mobile', 1, {y: '10vh', opacity: 0}, {y: '0px', opacity: 1}, 1.5)
-textPage2Text.fromTo('.page3__right--first-mobile', 1, {y: '10vh', opacity: 0}, {y: '0px', opacity: 1}, 2)
-textPage2Text.fromTo('.page3__step-back', 1, {y: '10vh', opacity: 0,}, {y: '0px', opacity: 1}, 2.5)
+textPage2Text.fromTo('.page3__left--first-mobile', 1, {y: '10vh', opacity: 0}, {y: '0px', opacity: 1}, 4.5)
+textPage2Text.fromTo('.page3__left--second-mobile', 1, {y: '10vh', opacity: 0}, {y: '0px', opacity: 1}, 6)
+textPage2Text.fromTo('.page3__right--first-mobile', 1, {y: '10vh', opacity: 0}, {y: '0px', opacity: 1}, 7.5)
+textPage2Text.fromTo('.page3__step-back', 1, {y: '10vh', opacity: 0,}, {y: '0px', opacity: 1}, 9)
 
-textPage2Text.fromTo('.page3__left--first-mobile', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 3.5)
-textPage2Text.fromTo('.page3__left--second-mobile', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 4)
-textPage2Text.fromTo('.page3__right--first-mobile', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 4.5)
-textPage2Text.fromTo('.page3__step-back', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 5)
+textPage2Text.fromTo('.page3__left--first-mobile', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 12.8)
+textPage2Text.fromTo('.page3__left--second-mobile', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 13.5)
+textPage2Text.fromTo('.page3__right--first-mobile', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 14.3)
+textPage2Text.fromTo('.page3__step-back', 1, {y: '0px', opacity: 1}, {y: '-10vh', opacity: 0}, 15.5)
 
 
 
@@ -252,4 +252,49 @@ $('.click').on('click', function() {
 	});
 
 	return false;
+});
+
+//page1----------------------page1------------------page1
+const next1 = document.querySelector('.page1__text--first');
+next1.addEventListener("click", function(e) {
+	const page2 = document.getElementById('page2');
+	page2.scrollIntoView({
+		block: "center",
+		behavior: "smooth",
+	});
+});
+
+//page2------------------------page2--------------------page
+const next2 = document.querySelector('.page2-text-mobile');
+next2.addEventListener("click", function(e) {
+	const page3 = document.getElementById('page3');
+	page3.scrollIntoView({
+		block: "center",
+		behavior: "smooth",
+	});
+});
+const next21 = document.querySelector('.page2-text-mobileB');
+next21.addEventListener("click", function(e) {
+	const page3 = document.getElementById('page3');
+	page3.scrollIntoView({
+		block: "center",
+		behavior: "smooth",
+	});
+});
+
+
+//page3------------------page3------------------page3
+const prev3 = document.querySelector('.page3__step-back');
+prev3.addEventListener("click", function(e) {
+	const page2 = document.getElementById('page2');
+	page2.scrollIntoView({
+		block: "center",
+		behavior: "smooth",
+	});
+});
+$(".next3").click(function(event){
+	event.preventDefault();
+	$('html, body').animate({
+		scrollTop: '+=3000',
+	}, 700);
 });

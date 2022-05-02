@@ -154,6 +154,7 @@ p {
 //page2-------------------------page2--------------------page2
 .page2 {
 	position: relative;
+	margin-top: -60vh;
 	opacity: 0;
 	&__image {
 	}
@@ -227,16 +228,10 @@ p {
 
 	}
 }
-.hidden-page2 {
-	position: relative;
-	margin-top: -245vh;
-	height: 100vh;
-	background-color: #ffffff;
-}
 //page3-------------------------page3--------------------page3
 .page3 {
+	margin-top: -140vh;
 	opacity: 0;
-	margin-top: -95vh;
 	position: relative;
 	&__image {}
 	
@@ -318,17 +313,11 @@ p {
 	
 	}
 }
-.hidden-page3 {
-	position: relative;
-	margin-top: -245vh;
-	height: 100vh;
-	background-color: #ffffff;
-}
 
 /* ---------------page4--------------page4---------- */
 .page4 {
+	margin-top: -190vh;
 	opacity: 0;
-	margin-top: -100vh;
 	position: relative;
 	height: 100vh;
 	&__image {
